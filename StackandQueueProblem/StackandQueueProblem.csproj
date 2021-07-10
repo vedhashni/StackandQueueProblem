@@ -45,7 +45,8 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Stack.cs" />
+    <Compile Include="QueueOperations.cs" />
+    <Compile Include="Field.cs" />
     <Compile Include="StackOperations.cs" />
   </ItemGroup>
   <ItemGroup>

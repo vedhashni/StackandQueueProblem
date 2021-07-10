@@ -12,12 +12,12 @@ namespace StackandQueueProblem
     class StackOperations
     {
         //Creating a node top
-        public Stack top;
+        public Field top;
 
         // Function is used to push data into stack
         public void Push(int newData)
         {
-            Stack newnode = new Stack(newData);
+            Field newnode = new Field(newData);
             if (this.top != null)
             {
                 newnode.next = this.top;
@@ -63,7 +63,7 @@ namespace StackandQueueProblem
         // Function is used to display stack
         public void Display()
         {
-            Stack temp = this.top;
+            Field temp = this.top;
             if (temp == null)
             {
                 Console.WriteLine("No values to be added");

@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace StackandQueueProblem
 {
-    class Stack
+    class Field
     {
         public int data;
-        public Stack next;
+        public Field next;
 
-        public Stack(int d)
+        public Field(int d)
         {
             data = d;
             next = null;
