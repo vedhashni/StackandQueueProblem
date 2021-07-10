@@ -8,6 +8,7 @@ namespace StackandQueueProblem
 {
     /// <summary>
     /// UC3 - Enqueue Operation
+    /// UC4 - Dequeue Operation
     /// </summary>
     class QueueOperations
     {
@@ -29,6 +30,17 @@ namespace StackandQueueProblem
                 temp.next = new_node;
             }
             Console.WriteLine("Inserted into queue : " + new_node.data);
+        }
+
+       public void Dequeue()
+        {
+            if (this.head == null)
+            {
+                Console.WriteLine("Queue is empty");
+            }
+            Field temp = this.head;
+            this.head = this.head.next;
+            Console.WriteLine("\nItem deleted is {0}", temp.data);
         }
 
         public void Display()

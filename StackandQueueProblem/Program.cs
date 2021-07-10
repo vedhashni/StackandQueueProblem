@@ -11,7 +11,7 @@ namespace StackandQueueProblem
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to stack and queue program");
-            Console.WriteLine("1.Push operation\n 2.PeekandPop operation\n 3.Enqueue Operation");
+            Console.WriteLine("1.Push operation\n 2.PeekandPop operation\n 3.Enqueue Operation\n 4.Dequeue Operation");
             Console.WriteLine("Enter the option");
             int option = Convert.ToInt32(Console.ReadLine());
             StackOperations stack= new StackOperations();
@@ -37,6 +37,14 @@ namespace StackandQueueProblem
                     queue.Enqueue(56);
                     queue.Enqueue(30);
                     queue.Enqueue(70);
+                    queue.Display();
+                    break;
+
+                case 4:
+                    queue.Enqueue(56);
+                    queue.Enqueue(30);
+                    queue.Enqueue(70);
+                    queue.Dequeue();
                     queue.Display();
                     break;
 
