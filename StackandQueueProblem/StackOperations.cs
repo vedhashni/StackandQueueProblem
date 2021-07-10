@@ -25,7 +25,41 @@ namespace StackandQueueProblem
             this.top = newnode;
             Console.WriteLine("New Node is {0}", newnode.data);
         }
-        
+        public void Peek()
+        {
+            if (this.top == null)
+            {
+                Console.WriteLine("No elements present in the stack");
+                return;
+            }
+            Console.WriteLine("The element after peeking is : " + this.top.data);
+        }
+        //Pop Mthod-Removes the top most element
+        public void Pop()
+        {
+            while (true)
+            {
+                if (this.top != null)
+                {
+                    Peek();
+                    this.top = this.top.next;
+                }
+                else
+                {
+                    Console.WriteLine("No elements present in the stack");
+                    return;
+                }
+            }
+        }
+        //Checking the any underflow or overflow occurs
+        /*public void IsEmpty()
+        {
+            while (this.top != null)
+            {
+                Peek();
+                Pop();
+            }
+        }*/
         // Function is used to display stack
         public void Display()
         {
@@ -37,7 +71,7 @@ namespace StackandQueueProblem
             }
             while (temp != null)
             {
-                Console.WriteLine("Value in te stack " + temp.data);
+                Console.WriteLine("Value in stack " + temp.data);
                 temp = temp.next;
             }
         }
